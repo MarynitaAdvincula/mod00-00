@@ -28,35 +28,72 @@ section {
  */
 section#bio {
 	background-color: #c0c0c0;
+	background-image: url('../img/pattern.png');
+	background-size: cover; 
 	position: relative;
+
 }	
+
+section#bio > div {
+	background-color: rgba(192,192,192,0.6);
+	width: 100%;
+	height:100vh;
+}
 
 section#bio,
 section#bio  a {
 	color: #0a0a0a;	
 }
 
-section#bio > div#details > img {
+section#bio > div > header > p {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right:15px;
+}
+
+section#bio > div > header > p > a{
+	text-decoration: none;
+} 
+section#bio > div > header > p > a:hover{
+	text-decoration: underline;
+}
+
+section#bio > div > header {
+	position:relative;
+}
+
+section#bio > div > header > p:last-child {
+	position: absolute;
+	right: 0;
+	top:0;
+} 
+
+section#bio > div > div#details > img {
 	border-radius: 50%;
 	width: 200px;
 	border: 5px solid black;
 	padding:5px;
 }
 
-section#bio > div#details > h1,
-section#bio > div#details > ul {
+section#bio > div > div#details > h1,
+section#bio > div > div#details > ul {
 	font-family: 'Muli', sans-serif;
 	padding-top: 15px;
 	padding-bottom: 15px
 }
 
-section#bio > div#details >ul {
+section#bio > div > div#details >ul {
 	list-style: none;
 	font size: 25px;
 }
 
-div#details{
-	/**/border: 1px solid#0a0a0a;
+section#bio > div > div#details > p {
+	line-height: 1.5;
+}
+
+
+div#details {
+	/*border: 1px solid#0a0a0a;*/
 	width: 50%;
 	text-align: center;
 	padding: 15px;
